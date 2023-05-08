@@ -30,3 +30,10 @@
     background-color: rgb(255, 223, 234);
     height: 80%;
 }
+
+
+/* Chart styling */
+.line {
+    fill: none;
+    stroke: blueviolet;
+}
