@@ -4,9 +4,51 @@ body {
     padding: 0;
 }
 
-#scroll-container {
-    width: 100%;
+#visualization {
+    position: sticky;
+    top: 0;
+    display: flex;
+    /* As Lars suggested, this centers the chart!*/
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    z-index: 1;
+}
+
+#article {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    /*keep elements within parent*/
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+svg {
+    background-color: pink;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.step {
+    width: 300px;
+    /*size is important for the element to be present!*/
+    height: 100px;
+    /*size is important for the element to be present!*/
+    margin-bottom: 50%;
+    background-color: aquamarine;
+}
+
+.data-line {
+    fill: none;
 }

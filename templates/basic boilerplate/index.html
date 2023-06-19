@@ -5,33 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
 </head>
 
 <body>
-    <div id="scroll-container">
-        <header>
-            <h1>Welcome to My Project</h1>
-        </header>
-
-        <main>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis dignissim vulputate. Nunc in
-                gravida odio. Suspendisse potenti.
-            </p>
-            <p>
-                Phasellus finibus ante id sem consequat interdum. Suspendisse vitae elit ac nisl faucibus facilisis. Nam
-                et diam vel erat pulvinar commodo.
-            </p>
-        </main>
-
-        <footer>
-            <p>&copy; 2023 My Project. All rights reserved.</p>
-        </footer>
+    <div id="visualization">
+        <svg id="chart" width="400" height="300"></svg>
+    </div>
+    <div id="article">
+        <section class="step" data-step="1">
+            <h1>Step 0</h1>
+        </section>
+        <section class="step" data-step="2">
+            <h1>Step 1</h1>
+        </section>
+        <section class="step" data-step="3">
+            <h1>Step 2</h1>
+        </section>
+        <section class="step" data-step="4">
+            <h1>Step 3</h1>
+        </section>
+        <section class="step" data-step="5">
+            <h1>Step 4</h1>
+        </section>
+        <section class="step" data-step="6">
+            <h1>Step 5</h1>
+        </section>
     </div>
 
     <script src="https://d3js.org/d3.v6.min.js"></script> <!-- Import D3.js library -->
-    <script src="https://unpkg.com/scrollama@2.2.0/dist/scrollama.min.js"></script> <!-- Import Scrollama library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+    <!-- Import Scrollama library -->
     <script src="main.js"></script> <!-- Link to your JavaScript file -->
 </body>
 
